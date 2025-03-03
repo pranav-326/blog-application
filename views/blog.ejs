@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+<h1><%= blog.title %></h1>
+<%= blog.body %>
+<br><hr>
+Created on <%= blog.time %>
+<br><br>
+<a href="/edit/<%= blog.id %>">
+    <button>Edit</button>
+</a>
+<form action="/delete/<%= blog.id %>" method="POST" style="display:inline;">
+    <button type="submit">Delete</button>
+</form>
+</div>
+<%- include('partials/footer.ejs') %>

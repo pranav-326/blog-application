@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Blogs</h1>
+<% const hasBlogs = blogs && blogs.length > 0; %>
+<% if (hasBlogs) { %>
+    <ol>
+        <% blogs.forEach(blog => { %>
+         <li><a href="/blog/<%= blog["id"] %>"><%= blog["title"] %></a></li>
+        <% }) %>
+    </ol>
+<% } else { %>
+ <h4><img src="https://media.tenor.com/5aE5T7edBz4AAAAM/the-simpsons-homer-simpson.gif" style="border-radius: 10px;" alt="No blogs found" srcset=""></h4>
+ <% } %>
+</div>
+<%- include("partials/footer.ejs") %>

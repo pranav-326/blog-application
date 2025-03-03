@@ -1,0 +1,21 @@
+textarea {
+    height: 500px;
+    width: 1200px;
+    resize: both;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.subtn {
+    height: 50px;
+    width: 100px;
+}
+main {
+    margin-left: 45px;
+    margin-right: 15px;
+}

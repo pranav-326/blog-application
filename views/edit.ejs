@@ -1,0 +1,8 @@
+<%- include('partials/header.ejs') %>
+<div class="container">
+    <form method="post" action="/update/<%= blog.id %>"><h1>Edit the blog</h1><br>
+        <input type="text" name="Title" value="<%= blog.title %>"><br>
+        <textarea name="Blog" ><%= blog.body %></textarea><br>
+        <button type="submit">Update</button>
+</form></div>
+<%- include("partials/footer.ejs") %>
