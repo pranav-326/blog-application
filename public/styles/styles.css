@@ -19,3 +19,28 @@ main {
     margin-left: 45px;
     margin-right: 15px;
 }
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        align-items: center;
+    }
+
+    input[type="text"], textarea {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 500px;
+    }
+
+    textarea {
+        height: 250px;
+    }
+
+    .subtn {
+        width: 80%;
+        max-width: 200px;
+    }
+}
